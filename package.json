@@ -1,0 +1,16 @@
+{
+  "name": "simpsons-api-project",
+  "version": "1.0.0",
+  "description": "Consumo de The Simpsons API con TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

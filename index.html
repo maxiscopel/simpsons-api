@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simpsons Viewer</title>
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Simpsons Viewer</h1>
+    <p class="subtitle">Explorá personajes y sus frases célebres</p>
+  </header>
+
+  <main class="main">
+    <section class="controls">
+      <button id="btnLoad" type="button">Cargar Personajes</button>
+    </section>
+
+    <section id="loading" class="loading hidden" aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Cargando personajes...</p>
+    </section>
+
+    <div id="error" class="error hidden" role="alert"></div>
+
+    <section id="characters" class="characters" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>API docs: <a href="https://thesimpsonsapi.com" target="_blank" rel="noopener noreferrer">The Simpsons API</a></p>
+  </footer>
+
+  <!-- Import del JS compilado -->
+  <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
